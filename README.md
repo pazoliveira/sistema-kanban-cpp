@@ -41,7 +41,7 @@ Para demonstrar boas práticas de engenharia de software, o projeto foi estrutur
 
 ---
 
-## 📂 Estrutura do Repositório
+## 📂 Estrutura do Repositório Final
 ```text
 /
 ├── docs/                   # Documentação técnica gerada (Doxygen HTML) + Diagrama UML (PDF)
