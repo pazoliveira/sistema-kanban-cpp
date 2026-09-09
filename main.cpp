@@ -2,6 +2,43 @@
 #include "dominios.hpp"
 using namespace std;
 
+#include <iostream>
+#include "entidades.hpp"
+
+using namespace std;
+
+int main() {
+    Codigo cdg;
+    Prioridade prd;
+    int entrada1;
+    int entrada2;
+
+    cout << "Digite um codigo entre 0 e 25: ";
+    cin >> entrada1;
+
+    cout << "Digite uma prioridade diferente de 0: ";
+    cin >> entrada2;
+
+    if (cdg.setValor(entrada1) == false) {
+        cout << "Errou no codigo!" << endl;
+    }
+
+    if (prd.setValor(entrada2) == false) {
+        cout << "Errou na prioridade!" << endl;
+    }
+
+    Projeto pjo;
+
+    pjo.setCodigo(cdg);
+    pjo.setPrioridade(prd);
+
+    cout << "Codigo salvo no projeto: " << pjo.getCodigo().getValor() << endl;
+    cout << "Prioridade salva no projeto: " << pjo.getPrioridade().getValor() << endl;
+
+    return 0;
+}
+
+/*
 // Código feito com alocação dinâmica
 int main(){
     CodigoCliente* ptr;
@@ -10,7 +47,7 @@ int main(){
 
     int entrada;
 
-    cout << "Escreva ai um número de 0 a 5";
+    cout << "Escreva ai um número de 0 a 5";+
     cin >> entrada;
 
     if (ptr->setValor(entrada)){
@@ -21,6 +58,8 @@ int main(){
     delete(ptr);
     return 0;
 }
+*/
+
 
 // Código feito com alocação estática
 /* int main() {
@@ -38,5 +77,5 @@ int main(){
 
 }
 */
-
-
+/*
+*/
