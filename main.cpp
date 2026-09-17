@@ -1,7 +1,6 @@
-#include <iostream>
-#include "dominios.hpp"
-using namespace std;
 
+/*
+Exercício 2 do laboratório
 #include <iostream>
 #include "entidades.hpp"
 
@@ -38,7 +37,14 @@ int main() {
     return 0;
 }
 
+*/
+
 /*
+
+#include <iostream>
+#include "dominios.hpp"
+using namespace std;
+
 // Código feito com alocação dinâmica
 int main(){
     CodigoCliente* ptr;
@@ -61,8 +67,15 @@ int main(){
 */
 
 
+
 // Código feito com alocação estática
-/* int main() {
+/*
+
+#include <iostream>
+#include "dominios.hpp"
+using namespace std;
+
+    int main() {
     CodigoCliente objeto;
     int entrada;
     cout << "Diga um número de 0 até 5";
