@@ -21,7 +21,8 @@ inline int CodigoCliente::getValor(){
 
 class Codigo {
     private:
-        static const int LIMITE = 25;
+        static const int LIMITE_MAX = 25;
+        static const int LIMITE_MIN = 1;
         int valor;
         bool Validar();
     public:

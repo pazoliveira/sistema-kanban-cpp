@@ -13,28 +13,27 @@ bool CodigoCliente::setValor(int valor) {
     return true;
 }
 */
-bool Codigo::Validar(int valor){
-    if (valor > LIMITE)
-        return false;
+bool Codigo::Validar(int v){
+    if (v > LIMITE_MAX || valor < LIMITE_MIN)
+        throw invalid_argument("Codigo invalido! Deve ser um numero entre 1 e 25.");
     return true;
 }
 
-bool Codigo::setValor(int valor) {
-    if (!Validar(valor))
-        return false;
-    this->valor = valor;
+void Codigo::setValor(int v) {
+    if (Validar(v)) {
+    this->valor = v;
+    }
+}
+
+bool Prioridade::Validar(int v){
+    if (v == ERRO){
+        throw invalid_argument("Codigo invalido! Deve ser um numero inteiro diferente de 0.");
+    }
     return true;
 }
 
-bool Prioridade::Validar(int valor){
-    if (valor == ERRO)
-        return false;
-    return true;
-}
-
-bool Prioridade::setValor(int valor) {
-    if (!Validar(valor))
-        return false;
-    this->valor = valor;
-    return true;
+void Prioridade::setValor(int v) {
+    if (Validar(v)){
+        this->valor = valor;
+    }
 }

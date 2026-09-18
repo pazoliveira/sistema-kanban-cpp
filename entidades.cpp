@@ -2,7 +2,6 @@
 
 using namespace std
 
-int main(){
 class Projeto {
     private:
         Codigo codigo;
@@ -27,4 +26,9 @@ inline Prioridade Projeto::getPrioridade(){
     return valor;
 
 
-};
+
+int main(){
+
+return 0;
+
+}
