@@ -21,18 +21,6 @@ O sistema diferencia perfis de usuários (**Gestores e Desenvolvedores**) e gere
     *   Tratamento robusto de exceções em métodos de atribuição (`setters`).
 *   **Ambiente:** Code::Blocks / Compilação nativa em C++.
 
----
-
-## ⚙️ Principais Funcionalidades e Métricas Ágeis
-O sistema implementa regras de negócio complexas do universo ágil, incluindo:
-1.  **Controle de Acesso e Contas:** Autenticação e permissões restritas baseadas no papel do usuário (Gestor vs. Desenvolvedor).
-2.  **Fluxo Kanban:** Movimentação controlada de cartões pelas colunas (*A Fazer* ➔ *Fazendo* ➔ *Feito*).
-3.  **Métricas de Desempenho:**
-    *   **Cycle Time:** Tempo de execução da atividade (da coluna *Fazendo* até *Feito*).
-    *   **Lead Time:** Tempo total da atividade (da entrada *A Fazer* até *Feito*).
-    *   **WIP (Work in Progress):** Monitoramento e limite de tarefas simultâneas em execução.
-
----
 
 ## 🏛️ Decisões Arquiteturais
 Para demonstrar boas práticas de engenharia de software, o projeto foi estruturado em dois grandes blocos independentes:
