@@ -1,51 +1,38 @@
 #ifndef DOMINIOS_HPP_INCLUDED
 #define DOMINIOS_HPP_INCLUDED
 
+#include <stdexcept>
+#include <string>
+
 using namespace std;
-
-/*
-class CodigoCliente {
-    private:
-        static const int LIMITE = 5;
-        int valor;
-        bool Validar(int);
-    public:
-        bool setValor(int);
-        int getValor();
-
-};
-inline int CodigoCliente::getValor(){
-    return valor;
-}
-*/
 
 class Codigo {
     private:
         static const int LIMITE_MAX = 25;
         static const int LIMITE_MIN = 1;
         int valor;
-        bool Validar();
+        void Validar(int v);
     public:
-        int getValor(int valor);
+        int getValor();
         void setValor(int valor);
 
 };
 
-inline Codigo::getValor(){
+inline int Codigo::getValor(){
     return valor;
 }
 
-Class Prioridade{
+class Prioridade{
     private:
         static const int ERRO = 0;
         int valor;
-        bool Validar();
+        void Validar(int v);
     public:
-        int getValor(int valor);
-        void setValor(int valor);
-}
+        int getValor();
+        void setValor(int v);
+};
 
-inline Prioridade::getValor(){
+inline int Prioridade::getValor(){
     return valor;
 }
 

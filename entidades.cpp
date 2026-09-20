@@ -1,3 +1,6 @@
+#ifndef ENTIDADE_HPP_INCLUDED
+#define ENTIDADE_HPP_INCLUDED
+
 #include "dominios.hpp"
 
 using namespace std
@@ -20,15 +23,7 @@ inline void Projeto::setPrioridade(Prioridade prioridade){
     this->prioridade = prioridade;
 }
 inline Codigo Projeto::getCodigo(){
-    return valor;
+    return codigo;
 }
 inline Prioridade Projeto::getPrioridade(){
-    return valor;
-
-
-
-int main(){
-
-return 0;
-
-}
+    return prioridade;

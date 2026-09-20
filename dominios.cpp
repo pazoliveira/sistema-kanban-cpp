@@ -1,18 +1,6 @@
 #include "dominios.hpp"
-/*
-bool CodigoCliente::Validar(int valor){
-    if (valor > LIMITE)
-        return false;
-    return true;
-}
 
-bool CodigoCliente::setValor(int valor) {
-    if (!Validar(valor))
-        return false;
-    this->valor = valor;
-    return true;
-}
-*/
+
 bool Codigo::Validar(int v){
     if (v > LIMITE_MAX || valor < LIMITE_MIN)
         throw invalid_argument("Codigo invalido! Deve ser um numero entre 1 e 25.");
@@ -36,4 +24,18 @@ void Prioridade::setValor(int v) {
     if (Validar(v)){
         this->valor = valor;
     }
+}
+
+
+bool CodigoCliente::Validar(int valor){
+    if (valor > LIMITE)
+        return false;
+    return true;
+}
+
+bool CodigoCliente::setValor(int valor) {
+    if (!Validar(valor))
+        return false;
+    this->valor = valor;
+    return true;
 }
